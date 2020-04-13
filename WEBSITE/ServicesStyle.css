@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Century Gothic';
+    font-weight: 500;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(backimg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Century Gothic';
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 22px;
+    margin-right: 70px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px;
+    border: 1px solid transparent;
+    transition: 0.8s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    margin-top: 20px;
+    margin-left: 25px;
+    float: left;
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+.login-icon{
+    border-radius: 0;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5%;
+    left: 97%;
+    transform: translate(-50%,-50%);
+}
+.category{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    top: 270%;   
+    text-align: center;
+    background: white;
+    box-sizing: border-box;
+    padding: 70px 50px;
+}
+img{
+    top: 100%;
+    width: 70%;
+}
+.title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    font-size: 55px;
+    color: white;
+    text-align: center;
+}
+.quantity{
+    border: 1px solid white;
+    background-color: #312f2f;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+}
+.order-btn{
+    border: none;
+    background: #312f2f;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.order-btn:hover{
+    background-color: grey;
+}
+.hero{
+    height: 440px;
+    width: 100%;
+    background-image: url(sky.jpg);
+    position: absolute;
+    top: 35%;
+    transform: translate(-50% -50%);
+    overflow-x: hidden;
+}
+.highway{
+    height: 100px;
+    width: 500%;
+    display: block;
+    background-image: url(road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform: translateX(-3500px);
+    }
+}
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url(city.png);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1500px);
+    }
+}
+.car{
+    width: 230px;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car{
+    100%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img{
+    width: 43px;
+    height: 43px;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.back-wheel{
+    left: -95px;
+    position: absolute;
+}
+.front-wheel{
+    left: 45px;
+    position: absolute;
+}
+
